@@ -30,10 +30,13 @@ grails.project.dependency.resolution = {
         grailsCentral()
         mavenLocal()
         mavenCentral()
+        
+        mavenRepo "http://s3.amazonaws.com/registix-maven/snapshot"
     }
     dependencies {
         compile("dk.brics.automaton:automaton:1.11-8")
         compile("org.grails:grails-datastore-test-support:1.0.2-grails-2.4")
+        compile("nl.flotsam:xeger:1.0-SNAPSHOT")
     }
 
     plugins {
